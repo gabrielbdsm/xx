@@ -6,4 +6,4 @@ route("/") do
     "Welcome to Genie!"
   end
 
-up(port = (∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000), "0.0.0.0" ,async = false)
+up(parse(Int64, ENV["PORT"]), "0.0.0.0" ,async = false)
