@@ -4,4 +4,4 @@ using Merly
 webserverpath("/")
 @page "/" HTTP.Response(200,"Hello World!")
 
-start(host = "0.0.0.0", port = (∈("PORT", keys(ENV)) ? parse(Int, ENV["PORT"]) : 5000))
+start(host = "0.0.0.0", port =  parse(Int, ENV["PORT"])
