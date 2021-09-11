@@ -6,4 +6,4 @@ route("/") do
     "Welcome to Genie!"
   end
 
-up($PORT ,async = false)
+up($PORT, "0.0.0.0" ,async = false)
